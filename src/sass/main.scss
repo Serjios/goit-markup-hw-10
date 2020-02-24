@@ -164,35 +164,24 @@ body {
 }
 
 .hero-title {
-  // display: inline-block;
   font-size: 48px;
   color: #fffcfc;
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 0;
   font-weight: 400;
-  // text-align: center;
+  min-width: 745px;
   letter-spacing: -1px;
 }
 
-.hero-title__first-line {
-  // display: block;
-  // font-family: var(--font-roboto);
-  // font-weight: 300;
-  // justify-content: center;
-  // align-items: center;
-  // margin: 0 auto;
+.hero-title:first-line {
+  font-family: var(--font-roboto);
+  font-weight: 300;
 }
 
-.hero-title__middle-letter {
-  // font-weight: 900;
-  // color: var(--nav-color);
-}
-
-.hero-title__second-line {
-  // font-weight: 600;
-  // color: var(--nav-color);
-  // letter-spacing: -2px;
+.hero-title__letter {
+  font-weight: 900;
+  color: var(--nav-color);
 }
 
 .hero__link {
