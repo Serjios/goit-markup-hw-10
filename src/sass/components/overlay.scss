@@ -1,0 +1,93 @@
+.overlay {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay::before {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: calc(100% - 20px);
+  height: calc(100% - 20px);
+  content: '';
+  background-color: rgba(0, 0, 0, 0.5);
+  transform: translateY(100%);
+  opacity: 0;
+  transition: transform var(--animation-time) var(--function-time);
+}
+
+.collection__item:hover .overlay::before,
+.gallery__item:hover .overlay::before {
+  display: block;
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.overlay__list {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity var(--animation-time) var(--function-time) 250ms;
+}
+
+.overlay:hover .overlay__list {
+  opacity: 1;
+}
+
+.overlay__item {
+  margin-right: 7px;
+  flex-basis: calc(100% / 3 - 5px);
+}
+
+.overlay__item:nth-child(3) {
+  margin-right: 0;
+}
+
+.overlay__item:last-child {
+  margin-right: 0;
+}
+
+.button {
+  height: 50px;
+  width: 50px;
+  padding: 0;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0);
+  border: 2px solid #fff;
+  cursor: pointer;
+}
+
+.button__icon {
+  height: 30px;
+  width: 30px;
+  fill: #fff;
+}
+
+.button__buy {
+  display: flex;
+  align-items: center;
+  border: 2px solid #fff;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 14px;
+  width: 165px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  margin-top: 5px;
+  background-color: #323232;
+  cursor: pointer;
+}
+
+.button__icon--buy {
+  padding-right: 10px;
+}
+
+.button:hover,
+.button__buy:hover {
+  background-color: $color-secondary;
+}

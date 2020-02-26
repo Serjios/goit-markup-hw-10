@@ -1,0 +1,112 @@
+$text-primary: 'Open Sans', sans-serif;
+$text-secondary: 'Roboto', sans-serif;
+$color-secondary: #1abc9c;
+
+// /* COLLECTION, GALERY, BLOG */
+
+// .collection,
+// .blog {
+//   background-color: #e9effd;
+// }
+
+// .gallery__title,
+// .collection__title {
+//   margin-bottom: 130px;
+// }
+
+// .gallery__list,
+// .collection__list {
+//   display: flex;
+// }
+
+// .gallery__item,
+// .collection__item {
+//   flex-basis: calc(100% / 4 - 22.5px);
+//   flex-grow: 0;
+//   margin-right: 30px;
+//   margin-bottom: 30px;
+// }
+
+// .collection__image,
+// .gallery__image {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// }
+
+// .collection__link,
+// .gallery__link {
+//   text-decoration: none;
+//   font-size: 18px;
+//   font-weight: 900;
+//   transition: background-color var(--animation-time) var(--function-time);
+// }
+
+// .collection__coin,
+// .gallery__coin {
+//   display: flex;
+// }
+
+// .collection__text,
+// .collection__price,
+// .gallery__text,
+// .gallery__price {
+//   font-size: 18px;
+//   font-family: var(--font-roboto);
+//   font-weight: 900;
+// }
+
+// .collection__text,
+// .gallery__text {
+//   text-transform: uppercase;
+//   padding-left: 13px;
+//   padding-top: 13px;
+//   margin: 0;
+//   background-color: #323232;
+//   color: #fff;
+//   flex-grow: 1;
+// }
+
+// .collection__price,
+// .gallery__price {
+//   padding: 13px;
+//   margin: 0;
+//   background-color: #8c8c8c;
+//   color: #fff;
+// }
+
+// .collection__link:hover .collection__text,
+// .collection__-link:focus .collection__text,
+// .gallery__link:hover .gallery__text,
+// .gallery__ink:focus .gallery__text {
+//   background-color: var(--nav-color);
+// }
+
+// .collection__link:hover .collection__price,
+// .collection__link:focus .collection__price,
+// .gallery__link:hover .gallery__price,
+// .gallery__link:focus .gallery__price {
+//   background-color: #7ed9c7;
+// }
+
+// /* COLLECTION */
+
+// /* GALLERY */
+// .gallery__list {
+//   flex-wrap: wrap;
+// }
+
+// .collection__item:nth-child(4n),
+// .gallery__item:nth-child(4n) {
+//   margin-right: 0;
+// }
+
+// .collection__item:nth-last-child(-n + 4),
+// .gallery__item:nth-last-child(-n + 4) {
+//   margin-bottom: 0;
+// }
+
+// .gallery__image {
+//   background-color: #e9effd;
+//   height: 280px;
+// }
