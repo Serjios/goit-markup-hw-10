@@ -38,11 +38,11 @@
   font-weight: 400;
   width: 800px;
   letter-spacing: -1px;
-}
 
-.hero-title:first-line {
-  font-family: $text-secondary;
-  font-weight: 300;
+  &:first-line {
+    font-family: $text-secondary;
+    font-weight: 300;
+  }
 }
 
 .hero-title__letter {
@@ -60,7 +60,7 @@
   padding: 15px 30px;
   background-color: $color-secondary;
   margin-top: 20px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color $time-animation $time-function;
 
   &:hover,
   &:focus {

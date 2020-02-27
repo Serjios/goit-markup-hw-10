@@ -25,10 +25,10 @@
   margin-right: 39px;
   flex-grow: 0;
   text-align: center;
-}
 
-.about__item:last-child {
-  margin-right: 0;
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .about__text {

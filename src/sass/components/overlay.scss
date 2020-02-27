@@ -13,7 +13,7 @@
   background-color: rgba(0, 0, 0, 0.5);
   transform: translateY(100%);
   opacity: 0;
-  transition: transform var(--animation-time) var(--function-time);
+  transition: transform $time-animation $time-function;
 }
 
 .collection__item:hover .overlay::before,
@@ -31,7 +31,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   opacity: 0;
-  transition: opacity var(--animation-time) var(--function-time) 250ms;
+  transition: opacity $time-animation $time-function;
 }
 
 .overlay:hover .overlay__list {
@@ -41,14 +41,14 @@
 .overlay__item {
   margin-right: 7px;
   flex-basis: calc(100% / 3 - 5px);
-}
 
-.overlay__item:nth-child(3) {
-  margin-right: 0;
-}
+  &:nth-child(3) {
+    margin-right: 0;
+  }
 
-.overlay__item:last-child {
-  margin-right: 0;
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .button {
@@ -59,6 +59,10 @@
   background-color: rgba(0, 0, 0, 0);
   border: 2px solid #fff;
   cursor: pointer;
+
+  &:hover {
+    background-color: $color-secondary;
+  }
 }
 
 .button__icon {
@@ -81,13 +85,12 @@
   margin-top: 5px;
   background-color: #323232;
   cursor: pointer;
+
+  &:hover {
+    background-color: $color-secondary;
+  }
 }
 
 .button__icon--buy {
   padding-right: 10px;
-}
-
-.button:hover,
-.button__buy:hover {
-  background-color: $color-secondary;
 }

@@ -62,7 +62,11 @@
   background-color: #4ec6ab;
   border-radius: 0 5px 5px 0;
   border: none;
-  transition: background-color var(--animation-time) var(--function-time);
+  transition: background-color $time-animation $time-function;
+
+  &:hover {
+    background-color: #7ed9c7;
+  }
 }
 
 .submit__icon {
@@ -70,8 +74,4 @@
   height: 50px;
   width: 90px;
   fill: #fff;
-}
-
-.submit:hover {
-  background-color: #7ed9c7;
 }
