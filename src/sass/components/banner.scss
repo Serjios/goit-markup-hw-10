@@ -39,7 +39,7 @@
   width: 800px;
   letter-spacing: -1px;
 
-  &:first-line {
+  &::first-line {
     font-family: $text-secondary;
     font-weight: 300;
   }
