@@ -1,5 +1,5 @@
 .footer {
-  background-color: #4ec6ab;
+  background-color: $color-secondary;
   background-image: url('../images/bg_footer.png');
   padding-top: 100px;
   padding-bottom: 135px;
@@ -59,13 +59,13 @@
   right: 1px;
   height: 56px;
   width: 90px;
-  background-color: #4ec6ab;
+  background-color: $color-secondary;
   border-radius: 0 5px 5px 0;
   border: none;
   transition: background-color $time-animation $time-function;
 
   &:hover {
-    background-color: #7ed9c7;
+    background-color: $color-hover;
   }
 }
 
@@ -73,5 +73,5 @@
   display: block;
   height: 50px;
   width: 90px;
-  fill: #fff;
+  fill: $text-color-secondary;
 }

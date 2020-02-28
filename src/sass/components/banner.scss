@@ -31,7 +31,7 @@
 
 .hero-title {
   font-size: 48px;
-  color: #fffcfc;
+  color: $text-color-secondary;
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 0;
@@ -53,7 +53,7 @@
 .hero__link {
   display: inline-block;
   font-size: 14px;
-  color: #ffffff;
+  color: $text-color-secondary;
   font-family: $text-secondary;
   text-decoration: none;
   text-transform: uppercase;
@@ -64,6 +64,6 @@
 
   &:hover,
   &:focus {
-    background-color: #7ed9c7;
+    background-color: $color-hover;
   }
 }

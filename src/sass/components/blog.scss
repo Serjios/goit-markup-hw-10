@@ -1,5 +1,5 @@
 .blog {
-  background-color: #e9effd;
+  background-color: $bg-color-section;
 }
 
 .blog__title {
@@ -35,7 +35,7 @@
   font-family: $text-primary;
   font-weight: 600;
   line-height: 1.44;
-  color: #555252;
+  color: $text-color-primary;
   padding-top: 14px;
   margin-top: -8px;
   margin-bottom: 45px;
@@ -45,7 +45,7 @@
   font-family: $text-primary;
   font-size: 14px;
   line-height: 1.85;
-  color: #555252;
+  color: $text-color-primary;
   margin: 0;
   margin-bottom: 17px;
 }
@@ -58,8 +58,8 @@
   line-height: 1.625;
   text-decoration: none;
   text-transform: capitalize;
-  color: #fff;
-  background-color: #4ec6ab;
+  color: $text-color-secondary;
+  background-color: $color-secondary;
   padding-top: 20px;
   padding-bottom: 20px;
   padding-right: 45px;
@@ -69,7 +69,7 @@
 
   &:hover,
   &:focus {
-    background-color: rgba(13, 236, 13, 0.5);
+    background-color: $color-hover;
     color: $color-secondary;
   }
 }

@@ -1,5 +1,5 @@
 .collection {
-  background-color: #e9effd;
+  background-color: $bg-color-section;
 }
 
 .gallery__title,
@@ -55,8 +55,8 @@
   padding-left: 13px;
   padding-top: 13px;
   margin: 0;
-  background-color: #323232;
-  color: #fff;
+  background-color: $bg-color-product-name;
+  color: $text-color-secondary;
   flex-grow: 1;
 }
 
@@ -64,8 +64,8 @@
 .gallery__price {
   padding: 13px;
   margin: 0;
-  background-color: #8c8c8c;
-  color: #fff;
+  background-color: $bg-color-product-price;
+  color: $text-color-secondary;
 }
 
 .collection__link:hover .collection__text,
@@ -79,7 +79,7 @@
 .collection__link:focus .collection__price,
 .gallery__link:hover .gallery__price,
 .gallery__link:focus .gallery__price {
-  background-color: #66f3d7;
+  background-color: $color-hover-product-price;
 }
 
 /* GALLERY */
@@ -98,6 +98,6 @@
 }
 
 .gallery__image {
-  background-color: #e9effd;
+  background-color: $bg-color-section;
   height: 280px;
 }
